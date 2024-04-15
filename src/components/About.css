@@ -1,0 +1,44 @@
+#about {
+    display: flex; /* Use flexbox to align content horizontally */
+    padding: 2rem;
+    background-color: rgb(7, 0, 27)
+}
+
+.aboutContent {
+    flex: 1; /* Allow the content to expand and fill the remaining space */
+    max-width: 800px;
+}
+
+.aboutContent h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.aboutContent p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    color: #ddd;
+}
+
+.aboutContent a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.aboutContent a:hover {
+    text-decoration: underline;
+}
+
+.abu {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 250px; /* Set a smaller fixed width for the image */
+    height: 250px; /* Set the height to match the width for a circular shape */
+    border-radius: 50%; /* Make the image circular */
+    margin-left: auto; /* Move the image to the right */
+    margin-right: auto; /* Center the image horizontally */
+    margin-top: 7rem; /* Push the image down by 1rem */
+    display: block; /* Ensure the image is displayed as a block element */
+}

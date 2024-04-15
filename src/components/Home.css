@@ -1,0 +1,66 @@
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 6rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 75px;
+}
+
+.introContent {
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin-bottom : 15px;
+}
+
+.bg {
+    width: 50%; /* Increased width for enlargement */
+    height: 70vh; /* Increased height for enlargement */
+    object-fit: cover;
+    flex-shrink: 0; /* Prevent image from shrinking */
+    border-radius: 50%; /* Rounded borders */
+    max-height: 470px;
+    max-width: 470px;
+    margin-left: -5%; /* Move the image towards the left */
+    
+}
+.home-sci{
+    margin-top: 20px;
+}
+
+.home-sci a{
+    margin : 30px 20px;
+    margin-left: 0;
+}
+
+
+
+.introContent {
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.hello,
+.introname,
+.introtext {
+    font-size: 2.5rem; /* Increase font size */
+    line-height: 1.8; /* Add space between lines */
+    margin-bottom: 1rem; /* Add space below each line */
+}
+
+.btn {
+    font-size: 2rem; /* Adjust button font size */
+    margin-top: 2rem; /* Add space above button */
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+    /* Apply scale animation on hover */
+    transform: scale(1.1);
+    cursor: pointer;
+  }
