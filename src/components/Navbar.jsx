@@ -13,6 +13,9 @@ function Navbar() {
         document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
     };
 
+    const scrollToSkills = () => {
+        document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+    };
     return (
         <>
             <nav className="nav-wrapper">
@@ -23,7 +26,7 @@ function Navbar() {
                             <a className="menu-item" onClick={scrollToAboutMe}>About Me</a>
                         </li>
                         <li>
-                            <a className="menu-item">Skills</a>
+                            <a className="menu-item" onClick={scrollToSkills}>Skills</a>
                         </li>
                         <li>
                             <a className="menu-item">Portfolio</a>

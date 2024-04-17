@@ -4,6 +4,7 @@ import abu from '../assets/aboutimg1.png'
 
 function About() {
     return (
+        <>
         <section id="about">
             <div className="aboutContent">
                 <h2>About Me</h2>
@@ -19,10 +20,11 @@ function About() {
                 <p>
                     For more information, you can refer to my <a href="https://in.linkedin.com/in/shivesh-kaushik-1a919624a">LinkedIn</a> page.
                 </p>
-            </div>
-
+                </div>
             <img src={abu} alt="About" className="abu"/>
+            
         </section>
+        </>
     );
 }
 
