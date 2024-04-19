@@ -15,10 +15,10 @@ function Home() {
                 <span className="hello">Hi,</span>
                 <span className="introtext">I'm <span className="introname">Shivesh</span><br />An enthusiastic Web Developer</span><br />
                 <div className="home-sci">
-                    <a href="#"><img src= {gitP}alt="" /></a>
-                    <a href="#"><img src={insP} alt="" /></a>
-                    <a href="#"><img src={likP} alt="" /></a>
-                    <a href="#"><img src={twiP}alt="" /></a>
+                    <a href="https://github.com/shiveshkaushik" target="_blank"><img src= {gitP}alt="" /></a>
+                    <a href="https://www.instagram.com/shivesh_.kaushik/" target="_blank"><img src={insP} alt="" /></a>
+                    <a href="https://in.linkedin.com/in/shivesh-kaushik-1a919624a" target="_blank"><img src={likP} alt="" /></a>
+                    <a href="https://twitter.com/shiveshkaushik" target="_blank"><img src={twiP}alt="" /></a>
                 </div>
             </div>
             <img src={dp} alt="profilePic" className="bg" />

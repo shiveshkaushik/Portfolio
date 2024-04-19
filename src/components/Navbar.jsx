@@ -16,6 +16,18 @@ function Navbar() {
     const scrollToSkills = () => {
         document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
     };
+
+    const scrollToPortfolio = () => {
+        document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const scrollToResume = () => {
+        document.getElementById('resume').scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const scrollToContact = () => {
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    }
     return (
         <>
             <nav className="nav-wrapper">
@@ -29,13 +41,13 @@ function Navbar() {
                             <a className="menu-item" onClick={scrollToSkills}>Skills</a>
                         </li>
                         <li>
-                            <a className="menu-item">Portfolio</a>
+                            <a className="menu-item" onClick={scrollToPortfolio}>Portfolio</a>
                         </li>
                         <li>
-                            <a className="menu-item">Resume</a>
+                            <a className="menu-item" onClick={scrollToResume}>Resume</a>
                         </li>
                         <li>
-                            <a className="menu-item">Contact Me</a>
+                            <a className="menu-item" onClick={scrollToContact}>Contact Me</a>
                         </li>
                     </ul>
                 </div>

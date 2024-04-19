@@ -14,53 +14,44 @@
     width: 50%;
     padding: 2rem;
     box-sizing: border-box;
-    margin-bottom : 15px;
+    margin-bottom: 15px;
 }
 
 .bg {
-    width: 50%; /* Increased width for enlargement */
-    height: 70vh; /* Increased height for enlargement */
+    width: 50%;
+    height: 70vh;
     object-fit: cover;
-    flex-shrink: 0; /* Prevent image from shrinking */
-    border-radius: 50%; /* Rounded borders */
+    flex-shrink: 0;
+    border-radius: 50%;
     max-height: 470px;
     max-width: 470px;
-    margin-left: -5%; /* Move the image towards the left */
-    
+    margin-left: -5%;
 }
-.home-sci{
+
+.home-sci {
     margin-top: 20px;
 }
 
-.home-sci a{
-    margin : 30px 20px;
+.home-sci a {
+    margin: 30px 20px;
     margin-left: 0;
-}
-
-
-
-.introContent {
-    width: 50%;
-    padding: 2rem;
-    box-sizing: border-box;
 }
 
 .hello,
 .introname,
 .introtext {
-    font-size: 2.5rem; /* Increase font size */
-    line-height: 1.8; /* Add space between lines */
-    margin-bottom: 1rem; /* Add space below each line */
+    font-size: 2.5rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
 }
 
 .btn {
-    font-size: 2rem; /* Adjust button font size */
-    margin-top: 2rem; /* Add space above button */
+    font-size: 2rem;
+    margin-top: 2rem;
     transition: transform 0.2s ease-in-out;
 }
 
 .btn:hover {
-    /* Apply scale animation on hover */
     transform: scale(1.1);
     cursor: pointer;
-  }
+}

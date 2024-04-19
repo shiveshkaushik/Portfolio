@@ -27,17 +27,17 @@ function Skills()
         <SkillCard icon={hIcon} name="HTML"></SkillCard>
         <SkillCard icon={cIcon} name="CSS"></SkillCard>
         <SkillCard icon={jIcon} name="JAVASCRIPT"></SkillCard>
-        <SkillCard icon={sIcon} name="REACT"></SkillCard>
-        <SkillCard icon={rIcon} name="SWIFT"></SkillCard>
+        <SkillCard icon={rIcon} name="REACT"></SkillCard>
+        <SkillCard icon={sIcon} name="SWIFT"></SkillCard>
         </div>
-        <br /><br /><br />
+        <br /><br />
         <h2 className="headings">BackEnd</h2>
         <div className="my-grid">
         <SkillCard icon={nIcon} name="NODE JS"></SkillCard>
         <SkillCard icon={eIcon} name="EXPRESS JS"></SkillCard>
         <SkillCard icon={mIcon} name="MONGO DB"></SkillCard>
         </div>
-        <br /><br /><br />
+        <br /><br />
         <h2 className="headings">Other</h2>
         <div className="my-grid">
         <SkillCard icon={gIcon} name="GIT"></SkillCard>

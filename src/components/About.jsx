@@ -18,7 +18,7 @@ function About() {
                     Outside of coding and travel adventures, I enjoy playing tennis and constantly seek to learn and grow.
                 </p>
                 <p>
-                    For more information, you can refer to my <a href="https://in.linkedin.com/in/shivesh-kaushik-1a919624a">LinkedIn</a> page.
+                    For more information, you can refer to my <a href="https://in.linkedin.com/in/shivesh-kaushik-1a919624a" target="_blank">LinkedIn</a> page.
                 </p>
                 </div>
             <img src={abu} alt="About" className="abu"/>
