@@ -40,18 +40,18 @@
 .hello,
 .introname,
 .introtext {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     line-height: 1.8;
     margin-bottom: 1rem;
 }
 
-.btn {
-    font-size: 2rem;
-    margin-top: 2rem;
-    transition: transform 0.2s ease-in-out;
+.home-sci a {
+    margin: 30px 20px;
+    margin-left: 0;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out; 
 }
 
-.btn:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+.home-sci a:hover img {
+    transform: scale(1.2);
 }

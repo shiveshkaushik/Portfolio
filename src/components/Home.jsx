@@ -13,7 +13,7 @@ function Home() {
         <section id="intro">
             <div className="introContent">
                 <span className="hello">Hi,</span>
-                <span className="introtext">I'm <span className="introname">Shivesh</span><br />An enthusiastic Web Developer</span><br />
+                <span className="introtext">I'm <span className="introname">Shivesh</span><br />A Full Stack Web Developer</span><br />
                 <div className="home-sci">
                     <a href="https://github.com/shiveshkaushik" target="_blank"><img src= {gitP}alt="" /></a>
                     <a href="https://www.instagram.com/shivesh_.kaushik/" target="_blank"><img src={insP} alt="" /></a>

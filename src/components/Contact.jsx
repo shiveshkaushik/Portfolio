@@ -8,43 +8,71 @@ const Contact = () => {
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
     
-    const [nerror, setnerror] = useState('');
-    const [eerror, seteerror] = useState('');
-    const [perror, setperror] = useState('');
-    const [serrorr, setserrorr] = useState('');
-    const [merror, setMessageError] = useState('');
-    const [isSent, setMessageSent] = useState(false);
+    const [nerror, setNError] = useState('');
+    const [eerror, setEError] = useState('');
+    const [perror, setPError] = useState('');
+    const [serror, setSError] = useState('');
+    const [merror, setMError] = useState('');
+    const [isSent, setIsSent] = useState(false);
 
     const handleNameChange = (e) => {
         setName(e.target.value);
-        setnerror('');
+        setNError('');
     }
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
-        seteerror('');
+        setEError('');
     }
 
     const handlePhoneChange = (e) => {
         setPhone(e.target.value);
-        setperror('');
+        setPError('');
     }
 
     const handleSubjectChange = (e) => {
         setSubject(e.target.value);
-        setserrorr('');
+        setSError('');
     }
 
     const handleMessageChange = (e) => {
-        setMessage(e.target.value);
-        setMessageError('');
+        const messageText = e.target.value;
+        if (messageText.trim().split(/\s+/).length > 50) {
+            setMError('Message should not exceed 50 words.');
+        } else {
+            setMessage(messageText);
+            setMError('');
+        }
     }
 
     const validateForm = () => {
         let isValid = true;
 
         if (!name.trim()) {
-            setnerror('Please enter your name.');
+            setNError('Please enter your name.');
+            isValid = false;
+        }
+
+        if (!email.trim()) {
+            setEError('Please enter your email.');
+            isValid = false;
+        }
+
+        if (!phone.trim()) {
+            setPError('Please enter your phone number.');
+            isValid = false;
+        }
+
+        if (!subject.trim()) {
+            setSError('Please enter a subject.');
+            isValid = false;
+        }
+
+        if (!message.trim()) {
+            setMError('Please enter your message.');
+            isValid = false;
+        } else if (message.trim().split(/\s+/).length > 50) {
+            setMError('Message should not exceed 50 words.');
             isValid = false;
         }
 
@@ -55,10 +83,15 @@ const Contact = () => {
         e.preventDefault();
 
         if (validateForm()) {
-            setMessageSent(true); 
+            setIsSent(true);
             setTimeout(() => {
-                setMessageSent(false);
-            }, 3000);
+                setName('');
+                setEmail('');
+                setPhone('');
+                setSubject('');
+                setMessage('');
+                setIsSent(false);
+            }, 6000);
         }
     }
 
@@ -84,7 +117,7 @@ const Contact = () => {
                     </div>
                     <div className='input-field'>
                         <input type="text" id="subject" value={subject} onChange={handleSubjectChange} className='item' placeholder='Subject' autoComplete='off' />
-                        {serrorr && <span className="error">{serrorr}</span>}
+                        {serror && <span className="error">{serror}</span>}
                     </div>
                 </div>
                 <div className='textarea-field'>
@@ -102,5 +135,3 @@ const Contact = () => {
 }
 
 export default Contact;
-
-
