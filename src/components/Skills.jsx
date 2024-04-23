@@ -12,6 +12,10 @@ import mIcon from '../assets/icons8-mongo-db-64.png'
 import gIcon from '../assets/icons8-git-48.png'
 import gtIcon from '../assets/icons8-github-48.png'
 import fIcon from '../assets/icons8-figma-48.png'
+import jvIcon from '../assets/icons8-java-48.png'
+import ciIcon from '../assets/icons8-c-48.png'
+import cppcon from '../assets/icons8-c-481.png'
+import pIcon from '../assets/icons8-python-48.png'
 
 
 function Skills()
@@ -36,6 +40,10 @@ function Skills()
         <SkillCard icon={nIcon} name="NODE JS"></SkillCard>
         <SkillCard icon={eIcon} name="EXPRESS JS"></SkillCard>
         <SkillCard icon={mIcon} name="MONGO DB"></SkillCard>
+        <SkillCard icon={ciIcon} name="C"></SkillCard>
+        <SkillCard icon={cppcon} name="C++"></SkillCard>
+        <SkillCard icon={jvIcon} name="JAVA"></SkillCard>
+        <SkillCard icon={pIcon} name="PYTHON"></SkillCard>
         </div>
         <br /><br />
         <h2 className="headings">Other</h2>
