@@ -2,6 +2,8 @@ import React from 'react';
 import './Portfolio.css';
 import sd from '../assets/swift-roll-dice.jpeg';
 import pd from '../assets/1.png';
+import td from '../assets/todo.png';
+import rd from '../assets/resco.png';
 
 function Portfolio(){
     return (
@@ -28,6 +30,25 @@ function Portfolio(){
                     <a href="https://github.com/shiveshkaushik/Pawsome" target='_blank' class="code-link">Code</a>
                 </div>
                 <img src={pd} alt="Pawsome Adop" className="project-img" />
+            </div>
+
+            <div className="project">
+                <div className="project-details">
+                    <h4>3. TO DO LIST</h4>
+                    <p>I made a to-do list backend using vanila javascript and Express JS module.</p>
+                    <p>The porduct uses Mongo DB for database management and storing tasks.</p>
+                    <a href="https://github.com/shiveshkaushik/ToDo"  target='_blank' class="code-link">Code</a>
+                </div>
+                <img src={td} alt="To Do list" className="project-img" />
+            </div>
+            <div className="project">
+                <div className="project-details">
+                    <h4>4. Solar Energy Bill Generator</h4>
+                    <p>I made a bill generator using HTML,CSS and vanila Javascrip.</p>
+                    <p>The bill generator lets the user add/edit/delete a client and generates monthly solar bill.All the bills get stored in the localstorage.</p>
+                    <a href="https://github.com/shiveshkaushik/RESCO"  target='_blank' class="code-link">Code</a>
+                </div>
+                <img src={rd} alt="Resco Bill generator" className="project-img" />
             </div>
         </div>
         </section>
